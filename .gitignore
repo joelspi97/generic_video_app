@@ -1,0 +1,10 @@
+css/eps/
+css/font/
+css/license/
+css/png/
+css/psd/
+css/svg/
+*.jpg
+*.png
+*.svg
+*.log

@@ -140,11 +140,11 @@ footer {
                         background-color: rgba(255, 255, 255, 0.15);;
                     }
             }
-            .carousel-section {
+            .carousel {
                 width: 100%;
                 overflow: auto;
                 text-align: center;
-                    .carousel-container {
+                    .carousel__container {
                         margin: 7rem 0;
                         white-space: nowrap;
                         position: relative;
@@ -181,14 +181,14 @@ footer {
                                         a {
                                             text-decoration: none;
                                         }
-                                        .carousel-item__details--icon {
+                                        .carousel-item__icon {
                                             width: 3rem;
                                             margin-right: 0.5rem;
                                         }
-                                        .carousel-item__details--title {
+                                        .carousel-item__title {
                                             margin-top: 1rem;
                                         }
-                                        .carousel-item__details--subtitle {
+                                        .carousel-item__subtitle {
                                             margin: 0.3rem 0 1rem 0;
                                         }
                                     }

@@ -143,83 +143,74 @@ footer {
                         background-color: rgba(255, 255, 255, 0.15);;
                     }
             }
-            .carousel {
-                width: 100%;
-                overflow: auto;
+            .carousel-section {
+                border-bottom: 0.1rem solid white;
+                margin-bottom: 1rem;
                 text-align: center;
-                    .carousel__container {
-                        margin: 7rem 0;
-                        white-space: nowrap;
-                        position: relative;
-                            .carousel-item {
-                                transition: 450ms all;
-                                overflow: hidden;
-                                display: inline-block;
-                                border-radius: 2.5rem;
-                                width: 20rem;
-                                height: 25rem;
-                                position: relative;
-                                margin-right: 0.6rem;
-                                transform-origin: center left;
-                                cursor: pointer;
-                                    .carousel-item__img {
-                                        width: 20rem;
-                                        height: 25rem;
-                                        object-fit: cover;
-                                    }
-                                    .carousel-item__details {
-                                        transition: 450ms opacity;
-                                        opacity: 0;
-                                        font-size: 1rem;
-                                        padding: 1rem;
-                                        display: flex;
-                                        flex-direction: column;
-                                        justify-content: flex-end;
-                                        align-items: flex-start;
-                                        position: absolute;
-                                        top: 0;
-                                        right: 0;
-                                        bottom: 0;
-                                        left: 0;
-                                        background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%);
-                                        a {
-                                            text-decoration: none;
+                .carousel {
+                    width: 100%;
+                    overflow: auto;
+                        .carousel__container {
+                            margin: 7rem 0;
+                            white-space: nowrap;
+                            position: relative;
+                                .carousel-item {
+                                    transition: 450ms all;
+                                    overflow: hidden;
+                                    display: inline-block;
+                                    border-radius: 2.5rem;
+                                    width: 20rem;
+                                    height: 25rem;
+                                    position: relative;
+                                    margin-right: 0.6rem;
+                                    transform-origin: center left;
+                                    cursor: pointer;
+                                        .carousel-item__img {
+                                            width: 20rem;
+                                            height: 25rem;
+                                            object-fit: cover;
                                         }
-                                        .carousel-item__icon {
-                                            width: 3rem;
-                                            margin-right: 0.5rem;
+                                        .carousel-item__details {
+                                            transition: 450ms opacity;
+                                            opacity: 0;
+                                            font-size: 1rem;
+                                            padding: 1rem;
+                                            display: flex;
+                                            flex-direction: column;
+                                            justify-content: flex-end;
+                                            align-items: flex-start;
+                                            position: absolute;
+                                            top: 0;
+                                            right: 0;
+                                            bottom: 0;
+                                            left: 0;
+                                            background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0) 50%);
+                                            a {
+                                                text-decoration: none;
+                                            }
+                                            .carousel-item__icon {
+                                                width: 3rem;
+                                                margin-right: 0.5rem;
+                                            }
+                                            .carousel-item__title {
+                                                margin-top: 1rem;
+                                            }
+                                            .carousel-item__subtitle {
+                                                margin: 0.3rem 0 1rem 0;
+                                            }
                                         }
-                                        .carousel-item__title {
-                                            margin-top: 1rem;
-                                        }
-                                        .carousel-item__subtitle {
-                                            margin: 0.3rem 0 1rem 0;
-                                        }
-                                    }
-                            }
-                            .carousel-item:hover {
-                                transform: scale(1.5);
-                            }
-                            .carousel-item:hover  .carousel-item__details {
-                                opacity: 1;
-                            }
-                            .carousel-item:hover ~ .carousel-item {
-                                transform: translate(10rem);
-                            }
-                    }
-            }
-            .my-list {
-                border-bottom: 0.1rem solid white;
-                margin-bottom: 1rem;
-            }
-            .tendencies {
-                border-bottom: 0.1rem solid white;
-                margin-bottom: 1rem;
-            }
-            .originals {
-                overflow-y: hidden;
-                border-bottom: 0.1rem solid white;
-
+                                }
+                                .carousel-item:hover {
+                                    transform: scale(1.5);
+                                }
+                                .carousel-item:hover  .carousel-item__details {
+                                    opacity: 1;
+                                }
+                                .carousel-item:hover ~ .carousel-item {
+                                    transform: translate(10rem);
+                                }
+                        }
+                }
             }
         }
         .home-footer {

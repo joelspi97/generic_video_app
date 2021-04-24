@@ -68,8 +68,8 @@ footer {
 /* HOME */
 
 .home-body {
-    background-color: $primary-color;
-    padding: 0 2rem;
+    background: rgb(204,107,255);
+    background: linear-gradient(180deg, rgba(204,107,255,1) 0%, rgba(30,38,122,1) 100%, rgba(143,87,253,1) 100%);
         header{
             .nav {
                 margin-right: 3rem;
@@ -119,9 +119,9 @@ footer {
                         cursor: text;
                         display: flex;
                         height: 4rem;
-                        justify-content: center;
+                        justify-content: space-between;
                         margin-top: 1.5rem;
-                        padding: 2.5rem 0;
+                        padding: 2rem;
                         width: 70%;
                         transition: 300ms all;
                             input {
@@ -131,7 +131,7 @@ footer {
                                 font-size: 1.6rem;
                                 height: 5rem;
                                 outline: none;
-                                width: 90%;
+                                width: 100%;
                             }
                             input::placeholder {
                                 color: white;
@@ -148,6 +148,7 @@ footer {
                 margin-bottom: 1rem;
                 text-align: center;
                 .carousel {
+                    padding: 0 2rem;
                     width: 100%;
                     overflow: auto;
                         .carousel__container {
@@ -217,6 +218,7 @@ footer {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
             align-items: center;
+            background-color: inherit;
         }
 }
 
@@ -371,9 +373,22 @@ footer {
     /* HOME */
 
     .home-body {
+        header {
+            img {
+                margin-left: 2.5rem;
+                width: 50%;
+                max-width: 20rem;
+            }
+            .nav__menu-container span {
+                display: none;
+            }
+        }
+
         .home-main {
-            .search h1 {
-                font-size: 2rem;
+            .search {
+                h1 {
+                    font-size: 2.2rem;
+                }
             }
         }
         .home-footer {
@@ -384,9 +399,6 @@ footer {
                 margin: 0;
                 margin-bottom: 2.5rem;
             }
-        }
-        .nav__menu-container span {
-            display: none;
         }
     }
 }

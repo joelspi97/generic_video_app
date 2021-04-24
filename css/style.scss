@@ -436,4 +436,16 @@ footer {
             }
         }
     }
+
+
+
+    /* LOGIN & SIGNUP */
+
+    .login-body, .signup-body {
+            .login-main, .signup-main {
+                .login__container, .signup__container {
+                    border: none;
+                }
+            }
+    }
 }

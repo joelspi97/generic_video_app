@@ -232,17 +232,17 @@ footer {
 
 
 
-/* LOGIN */
+/* LOGIN & SIGNUP */
 
-.login-body {
+.login-body, .signup-body {
     background-color: $secondary-color;
-        .login {
+        .login-main, .signup-main {
             background: linear-gradient($secondary-color, $primary-color);
             display: flex;
             justify-content: center;
             width: 100%;
             padding-bottom: 4rem;
-            &__container {
+            .login__container, .signup__container {
                 background-color: $transparent-color;
                 border: 0.2rem solid white;
                 border-radius: 4rem;
@@ -268,17 +268,9 @@ footer {
         }
 }
 
-
-
-/* SIGNUP */
-
 .signup__container {
     min-height: 65rem;
 }
-
-
-
-/* LOGIN & SIGNUP */
 
 .form-container {
     .input{
@@ -308,6 +300,9 @@ footer {
         font-size: 1.6rem;
         font-weight: bold;
         margin-bottom: 3rem;
+    }
+    .button:hover {
+        background-color: rgba(255, 255, 255, 0.4);
     }
     .lower-inputs {
         display:flex;

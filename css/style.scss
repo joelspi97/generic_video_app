@@ -51,9 +51,10 @@ header {
 /* GLOBAL FOOTER */
 
 footer {
-    align-items: center;
-    background-color: $primary-color;
     display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: $primary-color;
     height: 15vh;
     padding: 0 3rem;
     width: 100%;
@@ -68,6 +69,7 @@ footer {
 
 .home-body {
     background-color: $primary-color;
+    padding: 0 2rem;
         header{
             .nav {
                 margin-right: 3rem;
@@ -216,7 +218,14 @@ footer {
             }
             .originals {
                 overflow-y: hidden;
+                border-bottom: 0.1rem solid white;
+
             }
+        }
+        .home-footer {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            align-items: center;
         }
 }
 
@@ -344,19 +353,49 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media (max-width: 480px) {
-    footer {
-        flex-direction: column;
-        align-items: center;
-        border-top: 0.1rem solid white;
-        height: 100%;
-        padding: 2.5rem 0;
-        a {
-            margin: 0;
-            margin-bottom: 2.5rem;
+@media (max-width: 768px) {
+    .home-body{
+        .home-footer {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            height: 100%;
+            padding: 2.5rem 0;
+            justify-items: center;
+            a {
+                margin: 0;
+                margin-bottom: 2.5rem;
+            }
         }
     }
-    .nav__menu-container span {
-        display: none;
+}
+
+@media (max-width: 480px) {
+
+    body {
+        min-width: 32rem;
+    }
+
+    
+    
+    /* HOME */
+
+    .home-body {
+        .home-main {
+            .search h1 {
+                font-size: 2rem;
+            }
+        }
+        .home-footer {
+            grid-template-columns: 1fr;
+            height: 100%;
+            padding: 2.5rem 0;
+            a {
+                margin: 0;
+                margin-bottom: 2.5rem;
+            }
+        }
+        .nav__menu-container span {
+            display: none;
+        }
     }
 }
